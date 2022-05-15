@@ -56,8 +56,17 @@ var numb = text.match(/\d/g)  // retun as array
 console.log(numb.join(""))
  */
 
-let arr = [1, 2, 3, 45, 5];
+//forEach
+/* let arr = [1, 2, 3, 45, 5];
 
 arr.forEach((v, i) => {
   console.log(v, i);
-});
+}); */
+
+//Get Unique in array
+/* 
+const names = ['John', 'Paul', 'George', 'Ringo', 'John'];
+
+let unique = [...new Set(names)];
+console.log(unique); // 'John', 'Paul', 'George', 'Ringo'
+*/
