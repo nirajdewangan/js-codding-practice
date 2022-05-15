@@ -70,3 +70,47 @@ const names = ['John', 'Paul', 'George', 'Ringo', 'John'];
 let unique = [...new Set(names)];
 console.log(unique); // 'John', 'Paul', 'George', 'Ringo'
 */
+
+//get unique character in string
+//With sets and list comprehension:
+/*const remDup = (e) => [...new Set(e)].sort().join('');
+console.log(remDup('Rasikawef dfv dd'));*/
+
+// With reduce:
+/*const remDup = (s) =>
+  s
+    .split('')
+    .sort()
+    .reduce((a, b) => (a[a.length - 1] != b ? a + b : a), '');
+console.log(remDup('Rasikawef dfv dd'));*/
+
+// With filter:
+/* const remDup= s=> s.split("").filter((e,i,f)=>f.indexOf(e)==i).sort().join("")
+ console.log(remDup("Rasikawef dfv dd"))*/
+
+// With map:
+/*const remDup = (s) =>
+  s
+    .split('')
+    .map((c, i, o) => (o.indexOf(c) == i ? c : ''))
+    .sort()
+    .join('');
+console.log(remDup('Rasikawef dfv dd')); */
+
+/*async function asyncFn() {
+  const arr = ['a', 'b', 'c'];
+  for (const el of arr) {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    console.log(el);
+  }
+}
+asyncFn();*/
+
+/*function* generatorFn() {
+  const arr = ['d', 'e', 'f'];
+  for (const el of arr) {
+    yield new Promise((resolve) => setTimeout(resolve, 1000));
+    console.log(el);
+  }
+}
+generatorFn();*/
