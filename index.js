@@ -18,7 +18,7 @@ console.log(myArr) */
  arr3 = [...arr, ...arr2, ...arr1]
  console.log(arr3)  */
 
-//count str with for of  
+//count str with for of
 /*
 str = 'geeksforgeek'
 
@@ -33,7 +33,7 @@ const countChar = (str) => {
 console.log(countChar(str))
  */
 
-//count str with foreach 
+//count str with foreach
 /* function countStr(str){
   var count = {}
   
@@ -56,5 +56,8 @@ var numb = text.match(/\d/g)  // retun as array
 console.log(numb.join(""))
  */
 
+let arr = [1, 2, 3, 45, 5];
 
-
+arr.forEach((v, i) => {
+  console.log(v, i);
+});
